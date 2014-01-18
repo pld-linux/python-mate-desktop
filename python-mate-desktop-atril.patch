@@ -1,0 +1,11 @@
+--- python-mate-desktop-1.4.0/configure.ac.orig	2014-01-13 19:58:05.435088228 +0100
++++ python-mate-desktop-1.4.0/configure.ac	2014-01-15 21:37:44.460918920 +0100
+@@ -367,7 +367,7 @@
+ dnl should we build the atril module
+ AC_ARG_BINDING([atril],[YES])
+ if $build_atril; then
+-    PKG_CHECK_MODULES(ATRIL, [atril-document-2.32 atril-view-2.32],
++    PKG_CHECK_MODULES(ATRIL, [atril-document-1.5.0 atril-view-1.5.0],
+       build_atril=true,
+       build_atril=false)
+     if test -n "$export_dynamic"; then
